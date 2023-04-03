@@ -231,7 +231,7 @@ glutInit()
 glutInitDisplayMode(GLUT_RGBA)
 
 # Size of the window.
-# Manipulating this value will let us change the size of the output widow where the pixel is shown.
+# Manipulating this value will let us change the size of the output widow where the pixel is shown. If values here are changed, then it also need to be changed in line number 192 and 195.
 glutInitWindowSize(500, 500)
 
 glutInitWindowPosition(0, 0)
