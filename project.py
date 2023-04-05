@@ -1,6 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
+import numpy as np
 
 def findZone(x0, y0, x1, y1):
 
@@ -118,23 +119,73 @@ def BackGroundColour(x):
     if x > 24 or x < 0:
         print("Invalid Time")
     else:
-        if x>5 and x<=8:
+        if x>5 and x<=6:
+            glColor3f(0.0, 0.5, 0.74)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+        elif x>6 and x<=7:
+            glColor3f(0.0, 0.5, 0.72)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+        elif x>7 and x<=8:
+            glColor3f(0.0, 0.5, 0.7)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+        elif x>8 and x<=9:
+            glColor3f(0.0, 0.5, 0.8)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+        elif x>9 and x<=10:
             glColor3f(0.0, 0.5, 0.9)
             for i in range(600):
                 eight_way_symmetry(0, i, 500, i)
 
-        elif x>8 and x<=12:
+        elif x>10 and x<=11:
             glColor3f(0.0, 0.5, 1.0)
             for i in range(600):
                 eight_way_symmetry(0, i, 500, i)
 
-        elif x>12 and x<=16:
+        elif x>11 and x<=12:
             glColor3f(0.0, 0.5, 0.9)
             for i in range(600):
                 eight_way_symmetry(0, i, 500, i)
 
+        elif x>12 and x<=13:
+            glColor3f(0.0, 0.5, 0.8)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+        elif x>12 and x<=13:
+            glColor3f(0.0, 0.5, 0.7)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+
+        elif x>13 and x<=14:
+            glColor3f(0.0, 0.5, 0.72)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+
+        elif x>14 and x<=15:
+            glColor3f(0.0, 0.5, 0.74)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+
+        elif x>15 and x<=18:
+            glColor3f(0.0, 0.5, 0.76)
+            for i in range(600):
+                eight_way_symmetry(0, i, 500, i)
+
+
+
         else:
-            print("It is evening or night!")
+            print("It is night!")
 
 
 
@@ -193,10 +244,16 @@ def eightWay(x, y, x0, y0):
     draw_points(-y + x0, x + y0)
     draw_points(-x + x0, y + y0)
 
-def midPoint(x0, y0, radius):
+def midPoint(x0, y0, radius,s):
     d = 1 - radius
     x = 0
     y = radius
+    scaling_matrix = np.array([[s, 0], [0, s]])
+    values = [x, y]
+    column = np.array(values).reshape(-1, 1)
+    scalled = np.dot(scaling_matrix, column)
+    x=scalled[0]
+    y=scalled[1]
     eightWay(x, y, x0, y0)
     while x < y:
         if d >= 0:
@@ -208,8 +265,8 @@ def midPoint(x0, y0, radius):
             x = x + 1
         eightWay(x, y, x0, y0)
 
-def draw_circle(x, y, radius):
-    midPoint(x, y, radius)
+def draw_circle(x, y, radius,s):
+    midPoint(x, y, radius,s)
 
     glutSwapBuffers()
 
@@ -221,61 +278,72 @@ def coordinating_circle(x):
         else:
             if x > 5 and x <= 6:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.8, 0.0, 0.0)
-                    draw_circle(0, 300, i)
+                    s=2
+                    glColor4f(1.0, 0.5, 0.0, 0.0)
+                    draw_circle(0, 300, i,s)
 
             elif x > 6 and x <= 7:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.83, 0.0, 0.0)
-                    draw_circle(50, 350, i)
+                    s=1.7
+                    glColor4f(1.0, 0.6, 0.0, 0.0)
+                    draw_circle(50, 350, i,s)
 
             elif x > 7 and x <= 8:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.86, 0.0, 0.0)
-                    draw_circle(100, 400, i)
+                    s=1.4
+                    glColor4f(1.0, 0.7, 0.0, 0.0)
+                    draw_circle(100, 400, i,s)
 
             elif x > 8 and x <= 9:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.89, 0.0, 0.0)
-                    draw_circle(150, 450, i)
+                    s=1.3
+                    glColor4f(1.0, 0.8, 0.0, 0.0)
+                    draw_circle(150, 450, i,s)
 
             elif x > 9 and x <= 10:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.92, 0.0, 0.0)
-                    draw_circle(200, 500, i)
+                    s=1.3
+                    glColor4f(1.0, 0.9, 0.0, 0.0)
+                    draw_circle(200, 500, i,s)
 
             elif x > 10 and x <= 11:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.95, 0.0, 0.0)
-                    draw_circle(250, 550, i)
+                    s=1.3
+                    glColor4f(1.0, 1.0, 0.0, 0.0)
+                    draw_circle(250, 550, i,s)
 
             elif x > 11 and x <= 12:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.98, 0.0, 0.0)
-                    draw_circle(300, 550, i)
+                    s=1.3
+                    glColor4f(1.0, 0.9, 0.0, 0.0)
+                    draw_circle(300, 550, i,s)
 
             elif x > 12 and x <= 13:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.95, 0.0, 0.0)
-                    draw_circle(350, 500, i)
+                    s=1.3
+                    glColor4f(1.0, 0.8, 0.0, 0.0)
+                    draw_circle(350, 500, i,s)
 
             elif x > 13 and x <= 14:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.92, 0.0, 0.0)
-                    draw_circle(400, 450, i)
+                    s=1.4
+                    glColor4f(1.0, 0.7, 0.0, 0.0)
+                    draw_circle(400, 450, i,s)
 
             elif x > 14 and x <= 15:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.89, 0.0, 0.0)
-                    draw_circle(450, 400, i)
+                    s=1.7
+                    glColor4f(1.0, 0.6, 0.0, 0.0)
+                    draw_circle(450, 400, i,s)
 
-            elif x > 15 and x <= 16:
+            elif x > 15 and x <= 18:
                 for i in range(25, 0, -1):
-                    glColor4f(1.0, 0.86, 0.0, 0.0)
-                    draw_circle(500, 350, i)
+                    s=2
+                    glColor4f(1.0, 0.5, 0.0, 0.0)
+                    draw_circle(500, 350, i,s)
 
             else:
-                print("It is evening or night!")
+                print("It is night!")
 
 
 
