@@ -9,5 +9,6 @@ Based on the time given by user, the position of the sun changes along with its 
 <h3>Algorithms used:</h3>
 1) Mid Point Line Drawing Algorithm <br>
 2) Mid-Point Circle Drawing Algorithm <br>
+3) 8-Way Symmetry & Bresenham's Circle Algorithm <br>
 
 And some transformatin matrix were used.
