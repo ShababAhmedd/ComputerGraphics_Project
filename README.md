@@ -12,4 +12,4 @@ Based on the time given by the user, the position and size of the sun changes in
 3) 8-Way Symmetry & Bresenham's Circle Algorithm <br>
 4) Zone Conversion Algorithm.
 
-And some Scaling matrix were used to make the sun small and large.
+And some Scaling matrix were used.
