@@ -7,9 +7,9 @@ Based on the time given by the user, the position and size of the sun changes in
 2) NumPy
 
 <h3>Algorithms used:</h3>
-1) Mid Point Line Drawing Algorithm <br>
-2) Mid-Point Circle Drawing Algorithm <br>
-3) 8-Way Symmetry & Bresenham's Circle Algorithm <br>
-4) Zone Conversion Algorithm.
+Mid Point Line Drawing Algorithm <br>
+Mid-Point Circle Drawing Algorithm <br>
+8-Way Symmetry & Bresenham's Circle Algorithm <br>
+Zone Conversion Algorithm. <br>
 
-And some Scaling matrix were used.
+Some Scaling matrices were used.
