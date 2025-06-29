@@ -53,6 +53,21 @@ Make sure freeglut or an equivalent OpenGL runtime is installed on your system. 
 sudo apt-get install freeglut3-dev
 ```
 
+## 📦 How to Run
+
+1. Clone or download this repository to your local machine.
+2. Open a terminal or command prompt in the project directory.
+3. Run the Python script using:
+
+```bash
+python project.py
+```
+
+4. When prompted in the terminal, enter the time in military format (0–24).
+
+- For example: 7 for 7:00 AM or 15 for 3:00 PM
+
+
 On Windows, you may need to install freeglut via an installer or ensure it comes bundled with your graphics driver.
 
 
