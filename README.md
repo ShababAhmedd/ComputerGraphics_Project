@@ -70,7 +70,13 @@ python project.py
 
 - For example: 7 for 7:00 AM or 15 for 3:00 PM
 
+5. The OpenGL window will display:
 
+   - A gradient background representing the sky
+
+   - Buildings with entry points
+
+   - A sun that changes position, size, and color based on the entered time
 
 
 
