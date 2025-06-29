@@ -29,7 +29,7 @@ It showcases fundamental concepts of computer graphics such as 2D transformation
 - **GLUT (OpenGL Utility Toolkit)** – windowing and input
 - **NumPy** – for matrix operations and scaling
 
-## 🛠️ Requirements
+## Requirements
 
 Before running the project, make sure you have the following dependencies installed:
 
