@@ -11,5 +11,17 @@ This project is a time-based urban scene simulation developed using Python and P
 
 It showcases fundamental concepts of computer graphics such as 2D transformations, symmetry, pixel plotting, and OpenGL-based rendering.
 
+## Features
+
+- **Time-based animation**: Scene changes dynamically based on user-input time (0–24 in military format).
+- **Gradient sky rendering**: Background color smoothly transitions to simulate different times of day.
+- **Custom-rendered buildings**: Five uniquely styled buildings with separate entry points.
+- **Animated sun**: The sun changes position, scale, and color to simulate its movement across the sky.
+- **Zone-based line drawing**: Uses 8-way zone detection and transformation to draw lines in all octants.
+- **Midpoint circle algorithm**: Efficient algorithm to render circular sun using pixel-based plotting.
+- **Matrix-based scaling**: Circle radius is dynamically scaled using matrix multiplication.
+- **Real-time OpenGL rendering**: Built using PyOpenGL for GPU-accelerated drawing.
+
+
 https://www.desmos.com/calculator/y2qvhodvtz
 
