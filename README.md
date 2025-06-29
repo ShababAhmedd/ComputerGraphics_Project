@@ -108,6 +108,28 @@ ComputerGraphics_Project/
 - `showScreen()`  
   → Main display function combining background, buildings, and the sun.
 
+## Concepts Used
+
+This project incorporates several core concepts from computer graphics:
+
+- **Midpoint Line Drawing Algorithm**  
+  Used to plot lines between two points using efficient integer calculations. Works with zone-based transformations to support all directions.
+
+- **Zone Detection (8-way symmetry)**  
+  The 2D space is divided into 8 zones to generalize line plotting in all octants using only Zone 0 logic.
+
+- **Midpoint Circle Drawing Algorithm**  
+  Efficient way to draw a circle by calculating symmetric pixel points around the center.
+
+- **2D Scaling with Matrices**  
+  The sun's size is adjusted using scaling transformations implemented with NumPy matrix multiplication.
+
+- **Real-Time Rendering with OpenGL**  
+  Visual elements are rendered in real time using PyOpenGL and GLUT windowing.
+
+- **Time-based Animation**  
+  Scene elements (sky and sun) change dynamically based on user-inputted time to simulate real-world lighting.
+
 
 https://www.desmos.com/calculator/y2qvhodvtz
 
