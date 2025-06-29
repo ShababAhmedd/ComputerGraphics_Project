@@ -78,6 +78,33 @@ python project.py
 
    - A sun that changes position, size, and color based on the entered time
 
+ComputerGraphics_Project/
+│
+├── project.py        # Main script containing the entire simulation logic
+├── README.md      # Project documentation
+
+### Key Functional Components:
+
+- `findZone()`, `ZoneZeroConversion()`  
+  → Implements zone detection and coordinate transformations for line drawing.
+
+- `MidPointLine()`, `eight_way_symmetry()`  
+  → Midpoint line drawing algorithm using 8-way symmetry.
+
+- `midPoint()`, `draw_circle()`  
+  → Midpoint circle drawing for rendering the sun.
+
+- `BackGroundColour()`  
+  → Updates sky color based on time.
+
+- `buildingX()`  
+  → Draws individual buildings.
+
+- `coordinating_circle()`  
+  → Updates sun position and color dynamically.
+
+- `showScreen()`  
+  → Main display function combining background, buildings, and the sun.
 
 
 https://www.desmos.com/calculator/y2qvhodvtz
