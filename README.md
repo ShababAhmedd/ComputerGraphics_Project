@@ -78,12 +78,14 @@ python project.py
 
    - A sun that changes position, size, and color based on the entered time
 
+## Project Structure
+```
 ComputerGraphics_Project/
 │
 ├── project.py        # Main script containing the entire simulation logic
 ├── README.md      # Project documentation
-
-### Key Functional Components:
+```
+## Key Functional Components:
 
 - `findZone()`, `ZoneZeroConversion()`  
   → Implements zone detection and coordinate transformations for line drawing.
