@@ -53,6 +53,9 @@ Make sure freeglut or an equivalent OpenGL runtime is installed on your system. 
 sudo apt-get install freeglut3-dev
 ```
 
+On Windows, you may need to install freeglut via an installer or ensure it comes bundled with your graphics driver.
+
+
 ## 📦 How to Run
 
 1. Clone or download this repository to your local machine.
@@ -68,7 +71,6 @@ python project.py
 - For example: 7 for 7:00 AM or 15 for 3:00 PM
 
 
-On Windows, you may need to install freeglut via an installer or ensure it comes bundled with your graphics driver.
 
 
 
