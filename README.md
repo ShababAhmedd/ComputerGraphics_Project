@@ -29,5 +29,33 @@ It showcases fundamental concepts of computer graphics such as 2D transformation
 - **GLUT (OpenGL Utility Toolkit)** – windowing and input
 - **NumPy** – for matrix operations and scaling
 
+## 🛠️ Requirements
+
+Before running the project, make sure you have the following dependencies installed:
+
+- Python 3.10 or later
+- PyOpenGL
+- PyOpenGL_accelerate (optional, for performance)
+- FreeGLUT (OpenGL Utility Toolkit)
+- NumPy
+
+### Installation (Windows/Linux/macOS)
+
+You can install the required Python libraries using pip:
+
+```bash
+pip install PyOpenGL PyOpenGL_accelerate numpy
+```
+
+Make sure freeglut or an equivalent OpenGL runtime is installed on your system. On Linux, you can install it via:
+
+```bash
+sudo apt-get install freeglut3-dev
+```
+
+On Windows, you may need to install freeglut via an installer or ensure it comes bundled with your graphics driver.
+
+
+
 https://www.desmos.com/calculator/y2qvhodvtz
 
