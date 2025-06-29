@@ -130,6 +130,25 @@ This project incorporates several core concepts from computer graphics:
 - **Time-based Animation**  
   Scene elements (sky and sun) change dynamically based on user-inputted time to simulate real-world lighting.
 
+## How It Works
+
+1. **User Input**  
+   When the program starts, it prompts the user to enter the current time in military format (0–24).
+
+2. **Sky Rendering**  
+   Based on the entered time, the `BackGroundColour()` function selects a suitable background color and fills the sky using horizontal lines.
+
+3. **Building Drawing**  
+   Five buildings (`building1()` to `building5()`) and their entryways are rendered using custom line drawing via the Midpoint Algorithm and 8-way symmetry.
+
+4. **Sun Animation**  
+   The `coordinating_circle()` function places and scales the sun according to the input time, changing its color and position to simulate sunrise, noon, and sunset.
+
+5. **Display Output**  
+   The `showScreen()` function ties everything together and sends the output to the OpenGL window, refreshing it using `glutMainLoop()`.
+
+> No user interaction is required after input. The visual rendering happens automatically based on the logic built into the display function.
+
 
 https://www.desmos.com/calculator/y2qvhodvtz
 
