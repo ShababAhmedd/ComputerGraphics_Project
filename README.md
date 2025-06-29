@@ -22,6 +22,12 @@ It showcases fundamental concepts of computer graphics such as 2D transformation
 - **Matrix-based scaling**: Circle radius is dynamically scaled using matrix multiplication.
 - **Real-time OpenGL rendering**: Built using PyOpenGL for GPU-accelerated drawing.
 
+## Tech Stack
+
+- **Python 3.10+**
+- **PyOpenGL** – for OpenGL bindings
+- **GLUT (OpenGL Utility Toolkit)** – windowing and input
+- **NumPy** – for matrix operations and scaling
 
 https://www.desmos.com/calculator/y2qvhodvtz
 
